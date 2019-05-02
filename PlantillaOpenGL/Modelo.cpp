@@ -46,8 +46,8 @@ void Modelo::dibujar(GLenum modoDibujo) {
 	glUniformMatrix4fv(vistaID, 1, GL_FALSE,
 		&vista[0][0]);
 
-	glUniformMatrix4fv)proyeccionID, 1, GL_FALSE,
-	&proyeccion[0[0]];
+	glUniformMatrix4fv(proyeccionID, 1, GL_FALSE,
+	&proyeccion[0][0]);
 
 	glDrawArrays(modoDibujo, 0, vertices.size());
 	glBindVertexArray(0);
